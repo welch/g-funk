@@ -3,22 +3,22 @@ import os.path
 from setuptools import setup
 
 __version__ = "can't find version.py"
-exec(compile(open('g-funk/version.py').read(), # pylint: disable=exec-used
-                  'g-funk/version.py', 'exec'))
+exec(compile(open('gfunk/version.py').read(), # pylint: disable=exec-used
+                  'gfunk/version.py', 'exec'))
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-setup(name='g-funk',
+setup(name='gfunk',
       version=__version__,
-      description='Whole-genome functional classification of genes via PCA',
+      description='Whole-genome functional classification of genes via robust PCA',
       author='Will Welch',
       author_email='github@quietplease.com',
-      packages=['g-funk'],
+      packages=['gfunk'],
       license="MIT",
       keywords="Gene mapping, Principal Component Pursuit, Robust PCA",
-      url="https://github.com/welch/g-funk",
+      url="https://github.com/welch/gfunk",
       long_description=read('README.rst'),
       classifiers=[
           "Development Status :: 4 - Beta",
@@ -40,7 +40,7 @@ setup(name='g-funk',
       },
       entry_points={
           "console_scripts": [
-              # "g-funk.demo = g-funk.application:demo_cmd [PLOT]",
+              # "gfunk.demo = gfunk.application:demo_cmd [PLOT]",
           ],
       }
 )

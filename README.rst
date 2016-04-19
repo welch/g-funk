@@ -1,6 +1,5 @@
 gfunk
 ====
-[![Build Status][travis-image]][travis-url] [![PyPI version][pypi-image]][pypi-url] [![PyPI download][download-image]][pypi-url] (coming soon!)
 
 Whole-Genome Functional Classification of Genes using robust PCA
 
@@ -24,9 +23,3 @@ it do a nice job without all the pre-processing?
 Dependencies
 -------------
 numpy
-
-[travis-image]: https://travis-ci.org/welch/gfunk.svg?branch=master
-[travis-url]: https://travis-ci.org/welch/gfunk
-[pypi-image]: http://img.shields.io/pypi/v/gfunk.svg
-[download-image]: http://img.shields.io/pypi/dm/gfunk.svg
-[pypi-url]: https://pypi.python.org/pypi/gfunk
